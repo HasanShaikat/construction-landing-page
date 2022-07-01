@@ -160,6 +160,11 @@ p {
     transition: .4s;
 }
 
+/* Projects */
+.project-body p {
+    color: white;
+}
+
 /* Client Review Part */
 .review {
     background-color: #F5F6F7;
