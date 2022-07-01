@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+p {
+    color: rgb(158, 158, 158);
+}
+
+/* Header Part */
+.navbar {
+    background-color: blueviolet;
+    color: white;
+    padding: 10px 10px;
+}
+
+.navbar-brand {
+    color: rgb(245, 245, 245);
+    font-weight: 800;
+    font-size: 25px;
+    letter-spacing: 5px;
+}
+
+.navbar-brand:hover {
+    color: rgb(230, 230, 230);
+}
+
+.navbar-brand span {
+    color: rgb(182, 182, 182);
+}
+
+.navbar ul li a {
+    color: white;
+}
+
+.navbar ul li a:hover {
+    color: rgb(196, 196, 196);
+}
+
+.menubar {
+    color: white;
+    outline: 0;
+    border: 0;
+    font-size: 30px;
+}
+
+/* Banner part */
+
+.carousel-caption {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 10%;
+}
+
+.carousel-caption>p {
+    color: rgb(255, 255, 255);
+}
+
+.carousel-item img {
+    height: 480px;
+}
+
+/* quote part */
+.quote {
+    background-color: #F5F6F7;
+}
+
+.quote-form {
+    background-color: white;
+    padding: 30px 25px;
+}
+
+.quote-form button {
+    width: 50%;
+    background-color: blueviolet;
+    color: white;
+    margin-left: 25%;
+    margin-top: 10px;
+}
+
+.card img {
+    height: 300px;
+}
+
+/* Service */
+.service {
+    background-color: #F5F6F7;
+}
+
+.service .card:hover {
+    box-shadow: 5px 25px 12px rgb(212, 212, 212);
+    transition: .8s;
+}
+
+.service img {
+    width: 70px;
+    height: 70px;
+    margin-top: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.151);
+    border-radius: 50%;
+    padding: 5px;
+    margin-left: 20px;
+}
+
+.service img:hover {
+    background-color: #F5F6F7;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.img-1 {
+    position: relative;
+
+}
+
+
+.img-1 img {
+    height: 100%;
+    width: 100%;
+}
+
+.img-1 div {
+    position: absolute;
+    bottom: 0;
+    background: rgba(137, 43, 226, 0.425);
+    color: white;
+    visibility: hidden;
+
+}
+
+.img-1 a {
+    position: absolute;
+    top: 0;
+    right: 2.5%;
+    background: rgba(137, 43, 226, 0.425);
+    border-radius: 5px;
+    color: white;
+    visibility: hidden;
+}
+
+.img-1:hover div {
+    padding: 5px 0 5px 15px;
+    width: 95%;
+    visibility: visible;
+    transition: .6s;
+}
+
+.img-1:hover a {
+    padding: 15px;
+    visibility: visible;
+    transition: .4s;
+}
+
+/* Client Review Part */
+.review {
+    background-color: #F5F6F7;
+}
+
+.review .card img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+
+}
+
+.review .card {
+    position: relative;
+}
+
+.review .card:hover {
+    background-color: blueviolet;
+    color: white;
+    transition: .4s;
+}
+
+.review .card:hover p {
+    color: white;
+    transition: .4s;
+}
+
+.review .card .quote {
+    position: absolute;
+    top: 75px;
+    left: 170px;
+    border-radius: 100%;
+}
+
+.review .card .quote img {
+    width: 35px;
+    height: 35px;
+}
+
+/* Footer Part */
+footer {
+    box-shadow: 10px 5px 10px #000;
+}
+
+footer .social i,
+.contact i {
+    color: rgba(137, 43, 226, 0.788);
+}
+
+footer i:hover {
+    color: blueviolet;
+}
+
+.links a:hover {
+    color: blueviolet;
+}
+
+.links i {
+    padding-right: 5px;
+}
+
+
+
+
+
+
+@media(max-width: 767px) {
+
+    .card img {
+        width: 100%;
+    }
+
+    .card-body {
+        margin-top: 0;
+    }
+}
+
+@media(max-width: 450px) {
+    .carousel-caption {
+        margin-bottom: 0;
+        width: 70%;
+    }
+}
+
+@media(max-width: 800px) {
+    .carousel-caption {
+        width: 80%;
+    }
+}
+
+@media (max-width: 767px) {
+    .service img {
+        width: 70px;
+        height: 70px;
+        margin-top: 30px;
+        border: 1px solid rgba(0, 0, 0, 0.459);
+        border-radius: 50%;
+        padding: 5px;
+        margin-left: 20px;
+    }
+}
+
+@media(max-width: 1199px) {
+    .review .card .quote {
+        position: absolute;
+        top: 75;
+        left: 140px;
+    }
+}
+
+@media(max-width: 991px) {
+    .review .card .quote {
+        position: absolute;
+        top: 75;
+        left: 97px;
+    }
+}
+
+@media(max-width: 767px) {
+    .review .card .quote {
+        position: absolute;
+        top: 75;
+        left: 145px;
+    }
+}
+
+@media(max-width: 767px) {
+    .links {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .links h3,
+    a {
+        text-align: left;
+    }
+
+}
